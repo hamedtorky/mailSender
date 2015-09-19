@@ -82,12 +82,6 @@ while endSendMail == 0:
         msg.attach(MIMEText(text,'plain'))
         msg.attach(MIMEText(html,'html'))
         # msg.attach(MIMEImage(file("img/image1.png").read()))
-        # msg.attach(MIMEImage(file("img/image2.png").read()))
-        # msg.attach(MIMEImage(file("img/image3.png").read()))
-        # msg.attach(MIMEImage(file("img/image4.png").read()))
-        # msg.attach(MIMEImage(file("img/image5.png").read()))
-        # msg.attach(MIMEImage(file("img/image6.png").read()))
-        # msg.attach(MIMEImage(file("img/image7.png").read()))
 
         if counterAttach > 0:
             for attachNum in xrange(counterAttach):
