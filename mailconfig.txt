@@ -1,0 +1,14 @@
+emailList.txt
+mrl.torky@gmail.com
+hamedtorky1368
+hamedtorky2@gmail.com
+smtp.gmail.com:587
+
+
+help : 
+
+line 1 : mail list address
+line 2 : mail name 
+line 3 : password mail
+line 4 : bcc and cc static mail
+line 5 : server smtp address:port
