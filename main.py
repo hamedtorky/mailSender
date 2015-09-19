@@ -28,7 +28,7 @@ sleepTime = 2#second
 counter = 0
 
 Subject = 'test message!'
-text = 'in ik barname azmaishi mibashad . mitavanid in email ra pak konid'
+text = 'send by HAMED.app'
 fileHtml = open("html.txt",'r')
 html = fileHtml.read()
 fileHtml.close()
