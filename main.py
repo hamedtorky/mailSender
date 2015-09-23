@@ -43,14 +43,14 @@ endSendMail = 0
 print 'Start send mail in list "' + listName+'"'
 print '---------------------------------------------------'
 
-print 'Scan attach file :'
-attachFile= []
-counterAttach = 0
-os.chdir("img")
-for file in glob.glob("*.*"):
-    print 'Name file : '+ file
-    attachFile.append("img/"+file)
-    counterAttach = counterAttach +1
+# print 'Scan attach file :'
+# attachFile= []
+# counterAttach = 0
+# os.chdir("img")
+# for file in glob.glob("*.*"):
+#     print 'Name file : '+ file
+#     attachFile.append("img/"+file)
+#     counterAttach = counterAttach +1
 
 
 
@@ -81,11 +81,11 @@ while endSendMail == 0:
 
         msg.attach(MIMEText(text,'plain'))
         msg.attach(MIMEText(html,'html'))
-        # msg.attach(MIMEImage(file("img/image1.png").read()))
+        msg.attach(MIMEImage(file("img/image1.png").read()))
 
-        if counterAttach > 0:
-            for attachNum in xrange(counterAttach):
-                msg.attach(MIMEImage(file(attachFile[attachNum]).read()))
+        # if counterAttach > 0:
+        #     for attachNum in xrange(counterAttach):
+        #         msg.attach(MIMEImage(file(attachFile[attachNum]).read()))
 
         server = smtplib.SMTP(smtpAddress)
         server.ehlo()
