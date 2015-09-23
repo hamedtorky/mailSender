@@ -9,6 +9,7 @@ from re import findall
 url = open('mailDetectConfig.txt','r')
 
 link = url.readlines(2)
+url.close()
 print link[1]
 content = urlopen(link[1]).read()
 
@@ -33,3 +34,5 @@ for i in xrange(len(list)):
         print printList
 
 file.close()
+
+
