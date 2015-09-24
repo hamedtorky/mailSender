@@ -1,2 +1,2 @@
 url:
-http://hostiran.net
+http://hostiran.com
